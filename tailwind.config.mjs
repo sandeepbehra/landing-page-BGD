@@ -17,6 +17,17 @@ export default {
         },
       },
 
+      animation: {
+        marquee: 'marquee 30s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(100%)' },
+          '50%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+      },
+
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -27,3 +38,23 @@ export default {
   },
   plugins: [],
 };
+
+
+// module.exports = {
+//   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+//   theme: {
+//     extend: {
+//       animation: {
+//         marquee: 'marquee 30s linear infinite',
+//       },
+//       keyframes: {
+//         marquee: {
+//           '0%': { transform: 'translateX(100%)' },
+//           '50%': { transform: 'translateX(-100%)' },
+//           '100%': { transform: 'translateX(100%)' },
+//         },
+//       },
+//     },
+//   },
+//   plugins: [],
+// };

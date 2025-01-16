@@ -9,23 +9,17 @@ const Original = () => {
 
     const CompetitorData = [
         {
-            title: "Competitors Analysis",
-            // icon: <FaChevronDown />,
-            content: ["10k row search results", "10k row data exports", "100 domain overview PDF's", "6 months historical data", "250 sales leads &amp; domain contacts"],
-            price : 39
-        },
-        {
-            title: "Keyword Research",
-            // icon: <FaChevronDown />,
-            content: ["10k row search results", "10k row data exports", "100 domain overview PDF's", "6 months historical data", "250 sales leads &amp; domain contacts"],
-            price : 69
-        },
-        {
-            title: "Content Generation",
-            // icon: <FaChevronDown />,
-            content: ["10k row search results", "10k row data exports", "100 domain overview PDF's", "6 months historical data", "250 sales leads &amp; domain contacts"],
-            price : 89
-        },
+            title: "Brand Strategy",
+            content: ["Comprehensive Brand Audits", "Competitor Research and Analysis" ,"Strategic Brand Creation and Positioning"]
+          },
+          {
+            title: "Creative Services",
+            content: ["Brand Identity and Corporate Identity Development", "Strategic Brand Activation Campaigns","Design and Development of Sales and Marketing Collaterals"]
+          },
+          {
+            title: "Communication Strategy",
+            content: ["Crafting Key Messages and Messaging Strategies", "Creative Campaign Concept Developmentt", "Campaign-Specific Collateral Creation" , "Innovative Advertising Concepts"]
+          },
     ]
 
     return (

@@ -43,7 +43,7 @@ const Trends = () => {
 
                             <div className=" absolute bottom-[10px] ">
                                 <div className="flex justify-between items-center  text-black">
-                                    <a href="#" className=" text-blue-600 font-medium inline-flex items-center">
+                                    <a href="#" className=" text-gray-900 font-medium inline-flex items-center">
                                         Learn More <span className="ml-2">{items.iconArrow}</span>
                                     </a>
 
@@ -66,7 +66,7 @@ const Trends = () => {
 
                                         </div>
 
-                                        <a href="#" className="text-blue-600 hidden md:block font-medium hover:underline">
+                                        <a href="#" className="text-gray-900 hidden md:block font-medium hover:underline">
                                             <span className="material-icons text-[14px]  md:text-[23px]">{items.searchIcon}</span>
                                         </a>
 

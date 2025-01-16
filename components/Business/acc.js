@@ -12,7 +12,7 @@ const Acc = ({ items }) => {
       {items.map((item, index) => (
         <div key={index} className="border-b">
           <button
-            className={`w-full flex justify-between text-gray-900 items-center py-4 px-6 text-left text-[16px] md:text-[24px] font-semibold ${activeIndex === index ? "bg-slate-900 text-yellow-50 rounded-t-2xl" : null
+            className={`w-full flex justify-between text-gray-800 items-center py-4 px-6 text-left text-[16px] md:text-[24px] font-semibold ${activeIndex === index ? "bg-slate-900 text-yellow-50 rounded-t-2xl" : null
               }`}
             onClick={() => toggleAccordion(index)}>
             {item.title}
@@ -35,12 +35,12 @@ const Acc = ({ items }) => {
                 }
               </ul>
 
-              <div className="mt-6">
+              {/* <div className="mt-6">
                 <p className="md:text-2xl  text-sm font-bold">${item.price} / Month</p>
                 <button className="bg-orange-500 md:text-2xl  text-sm hover:bg-orange-600 text-white py-2 px-4 rounded mt-4">
                   Free Try
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

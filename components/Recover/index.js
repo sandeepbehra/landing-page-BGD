@@ -13,21 +13,18 @@ export const Recover = () => {
   };
 
   const recoverData = [{
-    title: "Competitors Analysis",
-    content: ["Cohabiter elemental simple", "Phaseolus nulls ellipt"]
+    title: "Brand Strategy",
+    content: ["Comprehensive Brand Audits", "Competitor Research and Analysis" ,"Strategic Brand Creation and Positioning"]
   },
   {
-    title: "Keyword Research",
-    content: ["Cohabiter elemental simple", "Phaseolus nulls ellipt"]
+    title: "Creative Services",
+    content: ["Brand Identity and Corporate Identity Development", "Strategic Brand Activation Campaigns","Design and Development of Sales and Marketing Collaterals"]
   },
   {
-    title: "Content Generation",
-    content: ["Cohabiter elemental simple", "Phaseolus nulls ellipt"]
+    title: "Communication Strategy",
+    content: ["Crafting Key Messages and Messaging Strategies", "Creative Campaign Concept Developmentt", "Campaign-Specific Collateral Creation" , "Innovative Advertising Concepts"]
   },
-  {
-    title: "Keyword Clustering",
-    content: ["Cohabiter elemental simple", "Phaseolus nulls ellipt"]
-  },
+  
   ]
   return (
     <div className='h-screen flex justify-between flex-col md:flex-row'>

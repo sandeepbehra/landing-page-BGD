@@ -11,11 +11,10 @@ const Banner = () => {
   return (
     <div className=' md:px-8 px-6 py-0 flex justify-around lg:gap-x-10 items-center h-[100vh]'>
         {/* <div className='mt-32 w-1/2'> */}
-        <div className='mt-32 w-screen md:w-1/2'>
-            <h1 className='text-3xl md:text-5xl p-2'>Discover Your Business</h1>
-            <h1 className='text-3xl md:text-5xl p-2'>SEO Solutions.</h1>
-            <p className='p-2 text-slate-400'>Maecenas egret risks qualm Cohabiter diapaus magna egret vehicular
-              pellentesque lobortis iaculis felis viverra sit amet.
+        <div className='md:mt-32  mt-0 w-screen md:w-1/2'>
+            <h1 className='text-3xl md:text-5xl p-2'>Campaigns That Drive</h1>
+            <h1 className='text-3xl md:text-5xl p-2'>Results, Automatically</h1>
+            <p className='p-2 text-slate-400'>End-to-end solutions powered by innovation, algorithms, and industry expertise.
             </p>
             {/* <div className='h-14 border bg-red-600 w-screen md:w-full wrap md:nowrap to-slate-950 flex justify-center items-center rounded-md'>
                <IoIosSearch className='ml-4 text-2xl  md:text-5xl'/>
@@ -25,26 +24,26 @@ const Banner = () => {
             </div> */}
 
 
-<div className="h-14 border bg-gray-300 w-full flex flex-wrap md:flex-nowrap justify-center items-center rounded-md p-2">
-  <IoIosSearch className="text-2xl md:text-4xl text-white ml-2 md:ml-4" />
+<div className="h-14 border bg-white w-full flex flex-wrap md:flex-nowrap justify-center items-center rounded-md p-2">
+  <IoIosSearch className="text-2xl md:text-4xl hidden text-gay-500 ml-2 md:ml-4" />
 
   <input 
     type="text" 
     placeholder="Analyze any website or App" 
-    className="flex-grow outline-none bg-transparent text-white placeholder-white px-4 py-2 md:py-0 w-full md:w-auto"
+    className="flex-grow outline-none bg-transparent text-gray placeholder-gray-500 px-4 pb-4 md:py-0 w-full md:w-auto"
   />
 
   <button 
-    className="border px-4 py-2 rounded-md bg-zinc-600 text-white mt-2 md:mt-0 md:ml-4 w-full md:w-auto"
+    className="border px-4 py-2 rounded-md bg-logobtbcolor text-white mt-2 md:mt-0 md:ml-4 w-full md:w-auto"
   >
     Search
   </button>
 </div>
 
-            <div className='flex p-2 gap-3 '>
+            <div className='pt-16  md:flex p-2 gap-3 '>
                 <h2 className='py-2'>Popular:</h2>
                {
-                searchButton.map((item)=><button className=' overflow-scroll border to-black rounded-md px-4 py-2 flex justify-center items-center gap-2' key={item}>{item.icon}{item.name}</button>)
+                searchButton.map((item)=><button className=' overflow-scroll border to-black rounded-md px-4 py-4 flex justify-center items-center gap-2' key={item}>{item.icon}{item.name}</button>)
                }
             </div>
             

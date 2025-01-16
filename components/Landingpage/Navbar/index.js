@@ -1,7 +1,42 @@
+"use client"
 import { navData } from '@/uitls/constant';
-import React from 'react'
+
+
+import SidebarComponent from '@/components/Sidebar';
+import ModalComponent from '@/components/Modal';
+
+
+
+
+import React, { useEffect, useState } from 'react'
+import { RxCross1, RxHamburgerMenu } from 'react-icons/rx';
+
+
+
+import { IoMdArrowForward } from 'react-icons/io';
 
 const Navbar = () => {
+
+  const [sidebar, setSidebar] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
+  const [logoVisible, setLogoVisible] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+      const handleScroll = () => {
+          setScrolled(window.scrollY > 50);
+      };
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleSidebarVisiblity = () => {
+      setSidebar((prev) => !prev);
+  };
+
+
+
+
   return (
 
     <nav className='w-screen md:w-full  bg-white fixed flex justify-between items-center border-b-2 border-b-slate-200'>
@@ -15,7 +50,7 @@ const Navbar = () => {
 
     <div className='flex justify-between gap-4 '>
       {
-         navData.map((data)=><div key={data} className='text-gray-400 font-sans hidden md:block'>{data}</div>)
+         navData.map((data)=><div key={data} className='text-gray-400 font-sans hidden md:block cursor-pointer '>{data}</div>)
       }
     </div>
 
@@ -24,8 +59,21 @@ const Navbar = () => {
      </button>
 
      <div className='block md:hidden '>
-      <a href='#' className='text-4xl'>&#8801;</a>
+      <a href='#' className='text-4xl' >&#8801;</a>
      </div>
+
+
+{/* <button 
+                className="lg:hidden p-2 hover:bg-gray-100 rounded-full transition-colors duration-300" 
+                onClick={handleSidebarVisiblity}
+                aria-label="Toggle menu"
+            >
+                <RxHamburgerMenu className={`${!sidebar ? 'block':'hidden'} text-3xl`} />
+                <RxCross1 className={`${sidebar ? 'block':'hidden'} text-3xl`}  />
+            </button>
+
+            {sidebar && <SidebarComponent sidebar={sidebar} setSidebar={setSidebar} />}
+            {openModal && <ModalComponent otpForm={otpForm} openModal={openModal} setOpenModal={setOpenModal} />} */}
  </nav>
 
 

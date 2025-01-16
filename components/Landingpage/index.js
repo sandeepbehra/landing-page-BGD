@@ -6,7 +6,12 @@ import Trust from '../Trust';
 import Trends from '../Trends';
 import Original from '../Business/original';
 import { Recover } from '../Recover';
-import Krat from '../Krat';
+import Logoslider from '../Logoslider';
+import DevelopersSlider from '../Devloper';
+import Scaling from '../Scaling';
+
+
+
 
 
 
@@ -21,19 +26,36 @@ const Landingpage = () => {
         <Banner />
       </div>
       <div className='relative'>
+      <Logoslider/>
+      </div>
+      <div className='relative'>
         <Services />
       </div>
-
+      <div className='relative'>
       <Trust />
+      </div>
+      <div className='relative'>
+      <DevelopersSlider/>
+      </div>
+      <div className='relative'>
+      <Scaling/>
+      </div>
+      
 
+
+
+{/* 
       <Trends />
 
       
 
       <Original />
-      <Recover />
+      <Recover /> */}
 
-
+    
+    
+     
+     {/* <Gallery/> */}
 
     </>
   )
